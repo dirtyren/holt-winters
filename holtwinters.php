@@ -33,7 +33,7 @@ for ($i=0;$i<count($values)-1;$i++) {
 print "Predicted: ".round($f3,3)."  - stddev ".round(standard_deviation($values),3)."\n";
 
 
-print "\nExponential Smothing\n";
+print "\nExponential Smoothing\n";
 $alpha=0.5;
 for ($i=0;$i<count($values)-1;$i++) {
 	// f1 = X1
@@ -48,7 +48,7 @@ for ($i=0;$i<count($values)-1;$i++) {
 }
 print "Predicted: ".round($value1,3)."\n";
 
-print "\nDouble Exponential Smothing\n";
+print "\nDouble Exponential Smoothing\n";
 $alpha=0.5;
 $gama=0.5;
 for ($i=0;$i<count($values)-1;$i++) {
